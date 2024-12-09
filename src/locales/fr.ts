@@ -1,0 +1,147 @@
+export const fr = {
+  common: {
+    login: 'Connexion',
+    logout: 'Déconnexion',
+    save: 'Enregistrer',
+    saving: 'Enregistrement...',
+    cancel: 'Annuler',
+    edit: 'Modifier',
+    delete: 'Supprimer',
+    confirm: 'Confirmer',
+    search: 'Rechercher',
+    actions: 'Actions',
+    book: 'Réserver',
+    duration: 'min',
+    findBest: 'Trouvez les meilleurs',
+    password: 'Mot de passe',
+    loggingIn: 'Connexion en cours...',
+  },
+
+  home: {
+    title: 'Réservez en ligne chez vos professionnels',
+    subtitle: 'Simple, rapide et pratique - trouvez le professionnel qu\'il vous faut',
+  },
+
+  categories: {
+    garagiste: 'Garagiste',
+    coiffeur: 'Coiffeur',
+    restaurant: 'Restaurant',
+    mecanicien: 'Mécanicien',
+  },
+
+  business: {
+    services: 'Nos services',
+    reviews: 'avis',
+    from: 'À partir de',
+    pricesUnavailable: 'Tarifs non disponibles',
+    findIn: 'Trouvez un',
+    near: 'près de chez vous',
+    citySearchPlaceholder: 'Dans quelle ville ?',
+    availableSlots: 'Horaires disponibles le',
+  },
+
+  booking: {
+    title: 'Réserver un rendez-vous',
+    name: 'Nom complet',
+    email: 'Adresse email',
+    processing: 'Traitement...',
+    confirm: 'Confirmer le rendez-vous',
+  },
+
+  favorites: {
+    title: 'Mes favoris',
+    empty: 'Vous n\'avez pas encore de favoris',
+  },
+
+  profile: {
+    title: 'Mon profil',
+    settings: 'Paramètres du compte',
+    name: 'Nom complet',
+    email: 'Adresse email',
+    currentPassword: 'Mot de passe actuel',
+    newPassword: 'Nouveau mot de passe',
+    confirmPassword: 'Confirmer le mot de passe',
+    updateSuccess: 'Profil mis à jour avec succès',
+    updateError: 'Erreur lors de la mise à jour du profil',
+  },
+
+  admin: {
+    login: {
+      title: 'Administration',
+      error: 'Identifiants invalides',
+    },
+    dashboard: {
+      title: 'Tableau de bord',
+      businesses: 'Entreprises',
+      users: 'Utilisateurs',
+      bookings: 'Réservations',
+      revenue: 'Revenus',
+      statistics: 'Statistiques',
+      monthlyGrowth: 'Croissance mensuelle',
+    },
+    users: {
+      title: 'Gestion des comptes',
+      search: 'Rechercher un utilisateur',
+      name: 'Nom',
+      type: 'Type',
+      admin: 'Administrateur',
+      professional: 'Professionnel',
+      client: 'Client',
+      edit: 'Modifier',
+      delete: 'Supprimer',
+      unnamed: 'Sans nom',
+      noUsers: 'Aucun utilisateur trouvé',
+      deleteConfirm: 'Êtes-vous sûr de vouloir supprimer cet utilisateur ?',
+      addUser: 'Ajouter un utilisateur',
+      addProfessional: 'Ajouter un professionnel',
+      selectBusiness: 'Sélectionner une entreprise',
+    },
+    businesses: {
+      title: 'Entreprises',
+      add: 'Ajouter une entreprise',
+      name: 'Nom',
+      category: 'Catégorie',
+      city: 'Ville',
+      noBusinesses: 'Aucune entreprise trouvée',
+    },
+  },
+
+  professional: {
+    login: {
+      title: 'Espace professionnel',
+    },
+    dashboard: {
+      title: 'Tableau de bord',
+      todayAppointments: 'Rendez-vous du jour',
+      clients: 'Clients',
+      attendanceRate: 'Taux de présence',
+      dailyRevenue: 'Revenus du jour',
+      nextAppointment: 'Prochain rendez-vous',
+      statistics: 'Statistiques',
+      noAppointments: 'Aucun rendez-vous aujourd\'hui',
+    },
+    bookings: {
+      title: 'Agenda des réservations',
+      calendar: 'Voir le calendrier',
+      status: {
+        pending: 'En attente',
+        confirmed: 'Confirmé',
+        cancelled: 'Annulé',
+      },
+      noBookings: 'Aucune réservation pour cette date',
+    },
+    business: {
+      title: 'Mon entreprise',
+      services: 'Services proposés',
+      addService: 'Ajouter un service',
+      editService: 'Modifier le service',
+      serviceName: 'Nom du service',
+      duration: 'Durée (minutes)',
+      price: 'Prix',
+      description: 'Description',
+      noServices: 'Aucun service disponible',
+      deleteConfirm: 'Êtes-vous sûr de vouloir supprimer ce service ?',
+      noBusinessAssigned: 'Aucune entreprise n\'est associée à votre compte. Veuillez contacter l\'administrateur.',
+    },
+  },
+};

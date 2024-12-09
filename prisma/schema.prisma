@@ -1,0 +1,51 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Business {
+  id           String    @id @default(cuid())
+  name         String
+  categoryId   String
+  category     Category  @relation(fields: [categoryId], references: [id])
+  address      String
+  city         String
+  rating       Float     @default(0)
+  totalReviews Int       @default(0)
+  reviews      Review[]
+  services     Service[]
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+}
+
+model Category {
+  id        String     @id @default(cuid())
+  name      String
+  slug      String     @unique
+  icon      String
+  Business  Business[]
+}
+
+model Review {
+  id         String   @id @default(cuid())
+  rating     Int
+  comment    String
+  author     String
+  businessId String
+  business   Business @relation(fields: [businessId], references: [id])
+  createdAt  DateTime @default(now())
+}
+
+model Service {
+  id          String   @id @default(cuid())
+  name        String
+  duration    Int
+  price       Float
+  description String
+  businessId  String
+  business    Business @relation(fields: [businessId], references: [id])
+}
